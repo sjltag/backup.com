@@ -1,0 +1,46 @@
+name: Sync Google Sheet to JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Four times per hour, away from the busy start of the hour.
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-google-sheet-json
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Create JSON from Google Sheets
+        run: node scripts/sync-sheet-data.mjs
+        env:
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEETS_API_KEY: ${{ secrets.GOOGLE_SHEETS_API_KEY }}
+          SITE_URL: https://sjcollection.github.io/.com/
+
+      - name: Save changed JSON files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "The Sheet data has not changed."
+          else
+            git commit -m "Update website JSON from Google Sheets"
+            git push
+          fi
