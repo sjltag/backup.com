@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Four times per hour, away from the busy start of the hour.
-    - cron: '7,22,37,52 * * * *'
+    - cron: '0 */5 * * *'
 
 permissions:
   contents: write
