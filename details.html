@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details - SJ's Collection Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="details-page">
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="logo.png" alt="SJ's Collection Hub Logo" class="logo-img" />
+        <span class="logo">SJ's Collection Hub</span>
+      </a>
+
+      <ul class="nav-menu" id="primaryNav">
+        <li><a href="index.html">WATCH MORE</a></li>
+        <li><a href="category.html" id="moreCategoryLink">MORE CATEGORY</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="content">
+    <div class="container">
+      <button class="back-btn" onclick="backToCategory()">← Back</button>
+
+      <div class="details-wrap">
+        <img id="detailsPoster" class="details-poster" src="" alt="Poster" />
+        <div>
+          <h1 id="detailsTitle"></h1>
+          <span class="badge" id="detailsType"></span>
+          <p id="detailsMessage" class="details-message" aria-live="polite"></p>
+
+          <div id="movieContainer" style="display:none;">
+            <button class="primary-btn" onclick="playMovie()">▶ PLAY NOW</button>
+          </div>
+
+          <div id="seasonsContainer" style="display:none;">
+            <h3>Select Season</h3>
+            <div class="chips" id="seasonsList"></div>
+          </div>
+
+          <div id="episodesContainer" style="display:none;">
+            <h3>Episodes</h3>
+            <div class="chips" id="episodesList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><p>&copy; 2024 SJ's Collection Hub. All Rights Reserved. </p></footer>
+
+  <script src="app.js"></script>
+  <script>
+    (function () {
+      const selected = (sessionStorage.getItem('selectedCategory') || '').trim();
+      const el = document.getElementById('moreCategoryLink');
+      if (!el) return;
+
+      el.textContent = selected ? ('MORE ' + selected.toUpperCase()) : 'MORE CATEGORY';
+      el.href = 'category.html';
+      el.addEventListener('click', () => {
+        if (typeof window.markCategoryReturnPosition === 'function') {
+          window.markCategoryReturnPosition();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "sheet": "LIST",
+  "range": "A:F",
+  "values": [
+    [
+      "1",
+      "ANIME",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1-7zpmzJ2a8nW9iVoPsEDItsSMjMRR12c",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "2",
+      "KDRAMA",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1VNyYf2xlKIpKc4iM1ch_z4TwW__65mLY",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "3",
+      "MOVIES",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1fduWUE5v3ydjySM0HtSU24sDAM0NSkpc",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "4",
+      "VIVAMAX",
+      "FOR 18+",
+      "https://lh3.googleusercontent.com/d/1eG1OIJwnAvyiwQg-Z8tyeheqvNOdJH9g",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "5",
+      "PINOY MOVIE",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1AdTYKg473HICklvlsj0ncvsn4Ia4NYhW",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "6",
+      "DISNEY",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1ANQEAgw8G2CsNMrauBxrGlR6p-2SmPuh",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "7",
+      "KWENTONG PAMBATA",
+      "TAGALOG DUBBED",
+      "https://lh3.googleusercontent.com/d/1_NO0EPWOxSBLXGgM_SUYowuuBc2KANmF",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "8",
+      "CARTOON",
+      "ENGLISH AUDIO",
+      "https://lh3.googleusercontent.com/d/1kjabZfl_ulStlJSPa0V_XYaf2OoKkvMx",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "9",
+      "MARVEL",
+      "ENGLISH AUDIO",
+      "https://lh3.googleusercontent.com/d/1icY1rOzJn7wp4tYCSztbbBRfYeTZ44k9",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "10",
+      "MOVIES [ENGLISH]",
+      "ENGLISH AUDIO",
+      "https://lh3.googleusercontent.com/d/1RbQf4KYTRqAkawXSAlmsw5oKD9X_k4MU",
+      "STREAMING",
+      "1"
+    ],
+    [
+      "11",
+      "PC GAMES",
+      "GAMES",
+      "https://lh3.googleusercontent.com/d/1s1PFQCmcJ5FEhxtInjAOswQ1oTvsa6tG",
+      "GAMING",
+      "2"
+    ],
+    [
+      "12",
+      "ANDROID GAMES",
+      "GAMES",
+      "https://lh3.googleusercontent.com/d/1_ZkHpGhLFPM-fkUd1ILAotHEt1LsBiur",
+      "GAMING",
+      "2"
+    ],
+    [
+      "13",
+      "PC SOFTWARE",
+      "SOFTWARE",
+      "https://lh3.googleusercontent.com/d/1mNykO9g7w822QDycUKtfvYlHaHVhMRZf",
+      "GAMING",
+      "2"
+    ]
+  ]
+}

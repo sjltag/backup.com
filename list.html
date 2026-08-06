@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lists - SJ's Collection Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="logo.png" alt="SJ's Collection Hub Logo" class="logo-img" />
+        <span class="logo">SJ's Collection Hub</span>
+      </a>
+
+      <a href="index.html" class="mobile-access-link">WATCH HERE</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="primaryNav">
+        <li class="desktop-access-item"><a href="index.html">WATCH HERE</a></li>
+        <li><a href="list.html" class="active">MORE LIST</a></li>
+        <li><a href="trial.html">TRIAL</a></li>
+        <li><a href="buy.html">BUY ACCESS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="content">
+    <div class="container">
+      <h2 class="section-title" id="listTitle">Browse Lists</h2>
+      <div class="grid list-grid" id="listGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer"><p>&copy; 2024 SJ's Collection Hub. All Rights Reserved. </p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
